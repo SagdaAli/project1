@@ -1,0 +1,637 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+:root{
+    --maincolor:#FFCB0F;
+}
+#header{
+    background-color: var(--maincolor);
+    height: 48vh;
+}
+#header .container .social i{
+    margin: 5px;
+    color: #000;
+    transition: .2s transform ease;
+}
+#header .container .social i:hover{
+    transform: scale(1.5);
+}
+#banner{
+    background:  linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+        url(../Images/banner.jpg) no-repeat center center;
+}
+#banner nav{
+    background-color: #222533;
+}
+#banner nav .navbar-brand{
+    color: #fff;
+    font-style: oblique;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#banner nav .navbar-brand span{
+    color: var(--maincolor);
+}
+#banner nav .navbar-brand p{
+    font-size: .7rem;
+    font-weight: lighter;
+    color: #B6B6B6;
+}
+#banner nav button{
+    background-color: var(--maincolor);
+}
+#banner nav li{
+    text-transform: capitalize;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+#banner nav li a{
+    color: #fff;
+    transition: .2s transform ease;
+}
+#banner nav li a:hover{
+    color: var(--maincolor);
+    transform: scale(1.2);
+}
+#banner nav li a i{
+    color: var(--maincolor);
+}
+#banner article {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+#banner article h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#banner article h1:first-of-type{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+#banner article h1:last-of-type{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    margin-bottom: 20px;
+}
+#banner article p{
+    margin-bottom: 40px;
+    font-size: .8rem;
+    word-spacing: 3px; 
+}
+#banner article .container div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .6s transform ease;
+    padding-bottom: 60px;
+}
+#banner article .container div:last-child a{
+    display: inline-block;
+    border: 2px solid var(--maincolor);
+    color: var(--maincolor);
+    background-color: #000;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#banner article .container div:last-child a:hover{
+    transform: scale(1.04);
+}
+#welcome article h1{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--maincolor);
+    
+}
+#welcome article h3{
+    font-size: .9rem;
+    margin-top: -6px;
+    margin-bottom: 15px;
+}
+#welcome article p{
+    font-size: .75rem;
+    word-spacing: 3px;
+}
+#welcome article a,#services a{
+    display: block;
+    color: #fff;
+    background-color: var(--maincolor);
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: .2s transform ease;
+}
+#welcome article a:hover,#services a:hover{
+    transform: scale(1.1);
+}
+#welcome aside img{
+    max-width: 100%;
+    height: auto;
+}
+#chooseUs{
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+        url(../Images/bg4.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+#chooseUs h2{
+    color: var(--maincolor);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 30px;
+}
+#chooseUs p{
+    font-size: .8rem;
+    word-spacing: 3px;
+    text-align: justify;
+}
+#chooseUs aside{
+    display: flex;
+    flex-wrap: wrap;
+}
+#chooseUs aside .cont-cards{
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#chooseUs aside .cont-cards div:first-of-type{
+    width: 100px;
+    height: 100px;
+    background-color: var(--maincolor);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 75px;
+}
+#chooseUs aside .cont-cards div:first-of-type img{
+    display:block;
+    line-height: 100px;
+    padding: 28px;
+}
+#chooseUs aside .cont-cards div:last-of-type{
+    background-color: rgba(0,0,0,.5);
+    width: 15rem;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#chooseUs aside .cont-cards div:last-of-type h5{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--maincolor);
+}
+#services{
+    padding: 50px;
+}
+#services h2{
+    text-align: center;
+    font-weight: bold;
+    font-size:1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#services .card{
+    border: none;
+    margin-bottom: 20px;
+}
+#services .card .card-body{
+    padding: 0;
+}
+#services .card .filter-on-img {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    height: 50px;
+    margin-top: -50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 50px;
+}
+#gallary{
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+        url(../Images/bg2.jpg) no-repeat;
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+}
+#gallary h2,#reveiws h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#gallary p,#reveiws p{
+    font-size: .8rem;
+    color: #DBDAD9;
+    margin-bottom: 40px;
+}
+#gallary>div{
+   margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gallary>div a{
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    color: #DBDAD9;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s transform ease;
+}
+#gallary>div a:hover{
+    background-color: #282828;
+    border-radius: 25px;
+    transform: scale(1.03);
+}
+#gallary main aside img{
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    transition: .2s transform ease;
+}
+#gallary main aside img:hover{
+    transform: scale(1.03);
+}
+#reveiws{
+    background: url(../Images/bg3.jpg);
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+}
+#reveiws h2{
+    color: #000;
+    font-size: 1.3rem;
+}
+#reveiws p{
+    color: #5C5C5C;
+}
+#reveiws article aside{
+    margin-bottom: 30px;
+}
+#reveiws article aside main{
+    background: url(../Images/blockquote2.png) no-repeat 3% 3%;
+    height: 250px;
+    padding: 10px;
+    padding-left: 60px;
+    background-color: #E5E5E5;
+}
+#reveiws article aside main:hover{
+    background: url(../Images/blockquote1.png) no-repeat 3% 3%;
+    padding-left: 60px;
+    background-color: var(--maincolor);
+}
+#reveiws article aside main p{
+    text-align: justify;
+}
+#reveiws article aside div:first-of-type{
+   
+    background: url(../Images/block-ico2.png) no-repeat center top;
+    height: 12px;
+    margin-bottom: 9px;
+}
+#reveiws article aside div:first-of-type:hover{
+   
+    background: url(../Images/block-ico1.png) no-repeat center top;
+    height: 12px;
+    margin-bottom: 9px;
+}
+#reveiws article aside div:last-of-type{
+    background: url(../Images/cust1.png) no-repeat center center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+#reveiws article aside span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#questions{
+    background-color: var(--maincolor);
+    color: #73757E;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#questions h2{
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+#questions h1{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+#questions aside input{
+    margin: 5px;
+    height: 40px;
+    text-transform: uppercase;
+}
+#questions aside input[type='submit']{
+    background-color: #73757E;
+    color: #fff;
+}
+#gray{
+    height: 30px;
+    background-color: #73757E;
+}
+#aboutUs{
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),
+        url(../Images/bg2.jpg) no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: #fff;
+}
+#aboutUs aside{
+    margin-bottom: 30px;
+}
+#aboutUs aside h3{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+#aboutUs aside:nth-child(1) h2{
+    color: var(--maincolor);
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#aboutUs aside:nth-child(1) p:first-of-type{
+    color: #A0A0A1;
+    font-size: .8rem;
+}
+#aboutUs aside div a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    background-color: var(--maincolor);
+    color: #000;
+    transition: .2s transform ease;
+}
+#aboutUs aside div a:hover{
+    transform: scale(1.15);
+}
+#aboutUs aside ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#aboutUs aside ul li{
+    margin-bottom: 15px;
+}
+#aboutUs aside ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+#aboutUs aside:nth-child(3) div{
+    margin-bottom: 15px;
+}
+#aboutUs aside:nth-child(3) div span{
+    border: 2px solid #fff;
+    display: inline-block;
+    width: 80px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+} 
+#aboutUs aside:nth-child(4) div{
+    margin-bottom: 20px;
+}
+#aboutUs aside:nth-child(4) div i{
+    margin-right: 15px;
+}
+footer{
+    height: 40px;
+    background-color: #1A1C27;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+footer span{
+    color: var(--maincolor);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+#header{
+    height: 23vh;
+}
+#banner article .container div:last-child{
+   padding-bottom: 120px;
+} 
+#welcome article a,#services a{
+    margin-left: 0;
+}
+#gallary>div{
+    flex-wrap: nowrap;
+    width: 700px;
+}
+ #gallary main aside:last-of-type{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 565px;
+     margin-left: auto;
+     margin-right: auto;
+}
+#gallary main aside:last-of-type div{
+    width: 48%;
+}
+#gallary main aside img{
+     margin-left: 0;   
+}
+#reveiws article aside main{
+    background: url(../Images/blockquote2.png) no-repeat 1% 5%;
+    height: 100px;
+    background-color: #E5E5E5;
+}
+#reveiws article aside main:hover{
+    background: url(../Images/blockquote1.png) no-repeat 1% 5%;
+    height: 100px;
+    background-color: var(--maincolor);
+    color: #fff;
+}
+#questions h2{
+    font-size: 1.7rem;
+}
+#questions h1{
+    font-size: 1.9rem;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+#header{
+    height: 10vh;
+}
+#banner nav li{
+       margin-left: 10px; 
+    }
+#banner article h3{
+    font-size: 1.7rem;
+}
+#banner article h1:first-of-type{
+    font-size: 2.2rem;
+}
+#banner article h1:last-of-type{
+    font-size: 2.5rem;
+}
+#banner article p{
+    font-size: 1rem;
+}    
+#banner article .container div:last-child{
+    flex-wrap: nowrap;
+    width: 420px;
+    padding-top: 50px;
+    padding-bottom: 170px;
+}
+#banner article .container div:last-child a{
+    width: 200px;
+    margin-left:10px; 
+}  
+#welcome article h1{
+    margin-top: 50px;
+    font-size:1.9rem;
+}
+#welcome article h3{
+    font-size: 1.2rem;
+    margin-top: -6px;
+}
+#welcome article p{
+    font-size: 1rem;
+}
+#welcome article a{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+#chooseUs p{
+    font-size: 1rem;
+    word-spacing: 3px;
+    text-align:center;
+}
+#chooseUs aside .cont-cards{
+    width: 200px;    
+}
+#chooseUs aside .cont-cards div:last-of-type{
+         width: 195px;
+}
+#chooseUs aside .cont-cards div:first-of-type{
+    left: 50px;    
+}
+#chooseUs aside .cont-cards div:last-of-type h5{
+     font-size: .9rem;   
+}
+#gallary h2{
+    font-size: 2rem;
+}
+#gallary p{
+    font-size: 1rem;
+}
+#gallary main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#gallary main aside:last-of-type{
+       padding-left: 10px;
+}
+#gallary main aside:last-of-type div{
+    width: 49%;
+}
+#reveiws h2{
+    
+    font-size: 2rem;
+}
+#reveiws>p{
+    font-size: 1.1rem;
+}
+#reveiws article{
+    display: flex;
+    justify-content: space-around;
+}
+#reveiws article aside{
+    width: 32%;    
+}
+#reveiws article aside main{
+    background: url(../Images/blockquote2.png) no-repeat 1% 5%;
+    height: 150px;
+    background-color: #E5E5E5;
+}
+#reveiws article aside main:hover{
+    background: url(../Images/blockquote1.png) no-repeat 1% 5%;
+    height: 150px;
+    background-color: var(--maincolor);
+    color: #fff;
+}
+footer{
+    height: 70px;
+    line-height: 70px;
+    font-size: 1rem
+}
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+#header{
+     height: 25px;
+}
+#banner nav li{
+     margin-left: 25px; 
+    }
+#gallary main{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
